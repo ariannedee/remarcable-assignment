@@ -34,4 +34,8 @@ You can log in to the admin site using your superuser credentials created above.
 - Using the built-in `User` model is sufficient, along with username sign in instead of email
 - Creating multiple apps is overkill for the scope
 - I'm not being evaluated too much on the folder structure
-- 
+
+
+## AI Attribution
+
+I used AI to generate believable product names, categories and tags.
