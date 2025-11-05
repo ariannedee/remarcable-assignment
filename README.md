@@ -32,3 +32,6 @@ You can log in to the admin site using your superuser credentials created above.
 - Running on a production environment is not needed
 - Using `sqlite` for a database is sufficient
 - Using the built-in `User` model is sufficient, along with username sign in instead of email
+- Creating multiple apps is overkill for the scope
+- I'm not being evaluated too much on the folder structure
+- 
