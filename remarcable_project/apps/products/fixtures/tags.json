@@ -1,0 +1,72 @@
+[
+  {
+    "model": "products.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Dust-Resistant"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Heavy-Duty"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Cordless"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 4,
+    "fields": {
+      "name": "Waterproof"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 5,
+    "fields": {
+      "name": "Compact"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 6,
+    "fields": {
+      "name": "Battery-Powered"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 7,
+    "fields": {
+      "name": "Rechargeable"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 8,
+    "fields": {
+      "name": "Industrial-Grade"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 9,
+    "fields": {
+      "name": "Multi-Purpose"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 10,
+    "fields": {
+      "name": "Ergonomic"
+    }
+  }
+]

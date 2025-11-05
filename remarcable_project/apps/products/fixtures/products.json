@@ -1,0 +1,234 @@
+[
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "DeWalt 20V Cordless Drill",
+      "category": 1,
+      "tags": [
+        6,
+        3,
+        10
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "name": "Makita Brushless Impact Driver",
+      "category": 1,
+      "tags": [
+        6,
+        5,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "name": "Bosch SDS Rotary Hammer",
+      "category": 1,
+      "tags": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "name": "Milwaukee M18 Circular Saw",
+      "category": 1,
+      "tags": [
+        6,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "name": "Hilti Cut-Off Grinder",
+      "category": 1,
+      "tags": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "name": "Stanley FatMax Tape Measure (25ft)",
+      "category": 4,
+      "tags": [
+        10
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "name": "Stabila Laser Distance Meter",
+      "category": 4,
+      "tags": [
+        5,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "name": "Irwin Chalk Line Reel",
+      "category": 4,
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "name": "Klein Lineman’s Pliers",
+      "category": 2,
+      "tags": [
+        10,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+      "name": "Wiha Precision Screwdriver Set",
+      "category": 2,
+      "tags": [
+        5,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+      "name": "Estwing 16oz Claw Hammer",
+      "category": 2,
+      "tags": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "name": "Ridgid Pipe Wrench",
+      "category": 2,
+      "tags": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+      "name": "3M Full-Face Respirator Mask",
+      "category": 3,
+      "tags": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+      "name": "Milwaukee Cut-Resistant Gloves",
+      "category": 3,
+      "tags": [
+        10,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+      "name": "Kask Safety Helmet",
+      "category": 3,
+      "tags": []
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+      "name": "DEWALT Shop Vacuum",
+      "category": 5,
+      "tags": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+      "name": "Makita Fast-Charger Station",
+      "category": 5,
+      "tags": [
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+      "name": "Bosch Replacement Saw Blades (5-Pack)",
+      "category": 6,
+      "tags": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+      "name": "Hilti Drill Bit Set",
+      "category": 6,
+      "tags": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+      "name": "Paslode Cordless Framing Nailer",
+      "category": 1,
+      "tags": [
+        6,
+        3,
+        8
+      ]
+    }
+  }
+]

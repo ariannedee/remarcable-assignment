@@ -6,11 +6,12 @@ Todo: Purpose
 ## Setting up the project
 
 1. Install Python (I used 3.14 but 3.12+ should work)
-2. Create a virtual environment and activate it (optional)
-3. Install requirements `pip install -r requirements.txt`
-4. Initialize the database `cd remarcable_project`, then `python manage.py migrate`
-5. Create a superuser `python manage.py createsuperuser`
-
+2. Create a virtual environment and activate it (optional): `python3.14 -m venv .venv` then `source .venv/bin/activate` (on Unix)
+3. Install requirements: `pip install -r requirements.txt`
+4. Navigate into the folder that contains `manage.py`: `cd remarcable_project`
+5. Initialize and migrate the database: `python manage.py migrate`
+6. Create a superuser: `python manage.py createsuperuser`
+7. Load the sample data: `python manage.py loaddata tags categories products`
 
 ## Running the code
 
