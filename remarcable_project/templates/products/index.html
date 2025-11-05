@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Products</title>
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+  >
 </head>
 <body>
-<h1>Products</h1>
+<main class="container">
+  <h1 class="is-size-1 has-text-centered">Products</h1>
+  <ul class="grid is-col-min-8">
+    {% for product in products %}
+      <li class="card">
+        <div class="card-content">
+          <p class="is-4 has-text-weight-semibold">{{ product.name }}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</main>
 </body>
 </html>
