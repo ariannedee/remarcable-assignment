@@ -25,29 +25,30 @@
 </head>
 <body>
 <main class="container">
-  <h1 class="is-size-1 has-text-centered">Products</h1>
+  <h1 class="is-size-1 has-text-centered mb-5">Products</h1>
 
   {# AI generated the form structure and styling using Bulma #}
   <form id="filterForm" method="GET" action="/">
     <div class="columns is-multiline">
       <div class="column is-4">
-        <label class="label">Search</label>
+        <label class="label" for="searchInput">Search</label>
         <input id="searchInput" name="search" class="input" type="text"
-               placeholder="Search by name or description..." , value="{{ request.GET.search }}">
+               placeholder="Search by name or description..." value="{{ request.GET.search }}">
       </div>
       <div class="column is-3">
-        <label class="label">Category</label>
+        <label class="label" for="categoryFilter">Category</label>
         <div class="select is-fullwidth">
           <select id="categoryFilter" name="category">
             <option value="">All Categories</option>
             {% for category in categories %}
-              <option value="{{ category.pk }}">{{ category.name }}</option>
+              <option value="{{ category.pk }}"
+                      {% if category.pk|stringformat:"d" == request.GET.category %}selected{% endif %}>{{ category.name }}</option>
             {% endfor %}
           </select>
         </div>
       </div>
       <div class="column is-3">
-        <label class="label">Tags</label>
+        <label class="label" for="tagFilter">Tags</label>
         <div class="select is-fullwidth is-multiple">
           <select id="tagFilter" name="tags" multiple>
             {% for tag in tags %}
@@ -59,14 +60,15 @@
           Hold <strong>Ctrl (Windows)</strong> or <strong>Cmd (Mac)</strong> to select multiple tags.
         </p>
       </div>
-      <div class="column is-2">
-        <button class="button is-dark is-fullwidth mt-5" type="submit">Filter</button>
+      <div class="column is-2 buttons">
+          <button class="button is-dark is-fullwidth mt-4 mb-3" type="submit">Filter</button>
+          <a class="button is-fullwidth" href="/">Clear filters</a>
       </div>
     </div>
   </form>
 
   <div class="container mb-3">
-    <p>Displaying {{ products.count }} items</p>
+    <p>Displaying {{ products.count }} item{{ products.count|pluralize }}</p>
   </div>
 
   <div class="columns is-multiline">
