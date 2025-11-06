@@ -1,4 +1,5 @@
-Django==5.2.7  # https://www.djangoproject.com/
+Django==5.2.7                # https://www.djangoproject.com/
+django-debug-toolbar==6.1.0  # https://django-debug-toolbar.readthedocs.io/
 
 asgiref==3.10.0
 sqlparse==0.5.3
