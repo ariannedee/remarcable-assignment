@@ -12,7 +12,7 @@ def index(request):
     qs = Product.objects.all()
 
     if search:
-        qs = qs.filter(name__contains=search)
+        qs = qs.filter(name__icontains=search)
 
     if category:
         qs = qs.filter(category__pk=category)
@@ -23,7 +23,7 @@ def index(request):
     context = {
         "categories": Category.objects.all(),
         "tags": Tag.objects.all(),
-        "products": qs,
+        "products": qs.select_related('category').prefetch_related('tags'),
         "selected_tags": tags,
     }
     return render(request, "products/index.html", context=context)
