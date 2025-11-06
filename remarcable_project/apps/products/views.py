@@ -1,9 +1,13 @@
 from django.shortcuts import render
 
-from .models import Product
+from .models import Category, Product, Tag
 
 
 def index(request):
-    qs = Product.objects.all()
-    context = {"products": qs}
+    print(request.POST)
+    context = {
+        "categories": Category.objects.all(),
+        "tags": Tag.objects.all(),
+        "products": Product.objects.all(),
+    }
     return render(request, "products/index.html", context=context)

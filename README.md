@@ -39,4 +39,6 @@ You can log in to the admin site using your superuser credentials created above.
 
 ## AI Attribution
 
-I used AI to generate believable product names, categories and tags.
+I used AI (free browser ChatGPT) to:
+- Generate believable product names, categories and tags
+- Create the HTML elements and Bulma styling for the filter form and product card content
