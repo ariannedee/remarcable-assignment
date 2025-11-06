@@ -7,19 +7,33 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
   >
+  <style>
+      .tool-card {
+          height: 100%;
+      }
+
+      .tool-card .card-image {
+          max-height: 140px;
+      }
+
+      .tool-card img {
+          object-fit: contain;
+          height: 100%;
+          max-height: 140px;
+      }
+  </style>
 </head>
 <body>
 <main class="container">
   <h1 class="is-size-1 has-text-centered">Products</h1>
 
   {# AI generated the form structure and styling using Bulma #}
-  <form id="filterForm" method="POST" action="/">
-    {% csrf_token %}
+  <form id="filterForm" method="GET" action="/">
     <div class="columns is-multiline">
       <div class="column is-4">
         <label class="label">Search</label>
         <input id="searchInput" name="search" class="input" type="text"
-               placeholder="Search by name or description...">
+               placeholder="Search by name or description..." , value="{{ request.GET.search }}">
       </div>
       <div class="column is-3">
         <label class="label">Category</label>
@@ -51,33 +65,36 @@
     </div>
   </form>
 
-  <div class="container">
+  <div class="container mb-3">
     <p>Displaying {{ products.count }} items</p>
   </div>
 
-  <ul class="grid is-col-min-8">
+  <div class="columns is-multiline">
     {% for product in products %}
-      <li class="card">
-        {# AI generated the product card structure and styling using Bulma #}
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img
-                src="https://images.thdstatic.com/productImages/5619d857-14f0-4adb-a749-847468164632/svn/milwaukee-electricians-tool-sets-48-22-8111-48-22-2202-48-22-3079-64_600.jpg"
-                alt="{{ product.name }}">
-          </figure>
-        </div>
-        <div class="card-content">
-          <p class="title is-6">{{ product.name }}</p>
-          <p class="subtitle is-7">{{ product.category.name }}</p>
-          <div class="tags">
-            {% for tag in product.tags.all %}
-              <span class="tag is-light">{{ tag.name }}</span>
-            {% endfor %}
+      <div class="column is-one-quarter">
+        <div class="card tool-card">
+          {# AI generated the product card structure and styling using Bulma #}
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img
+                  src="https://images.thdstatic.com/productImages/5619d857-14f0-4adb-a749-847468164632/svn/milwaukee-electricians-tool-sets-48-22-8111-48-22-2202-48-22-3079-64_600.jpg"
+                  alt="{{ product.name }}">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-6">{{ product.name }}</p>
+            <p class="subtitle is-7">{{ product.category.name }}</p>
+            <div class="tags">
+              {% for tag in product.tags.all %}
+                <span class="tag is-light">{{ tag.name }}</span>
+              {% endfor %}
+            </div>
           </div>
         </div>
-      </li>
+      </div>
     {% endfor %}
-  </ul>
+  </div>
+  </div>
 </main>
 </body>
 </html>
