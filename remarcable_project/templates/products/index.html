@@ -52,7 +52,7 @@
         <div class="select is-fullwidth is-multiple">
           <select id="tagFilter" name="tags" multiple>
             {% for tag in tags %}
-              <option value="{{ tag.pk }}">{{ tag.name }}</option>
+              <option value="{{ tag.pk }}" {% if tag.pk in selected_tags %}selected{% endif %}>{{ tag.name }}</option>
             {% endfor %}
           </select>
         </div>
