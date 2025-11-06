@@ -1,7 +1,7 @@
 # Remarcable assignment
 Arianne Dee - _November 2025_
 
-Todo: Purpose
+View products for a contractor tool manager app.
 
 ## Setting up the project
 
