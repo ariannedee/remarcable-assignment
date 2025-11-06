@@ -29,7 +29,7 @@ class Tag(models.Model):
 
 
 class Product(models.Model):
-    name = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
     category = models.ForeignKey(Category,
                                  related_name="products",
                                  on_delete=models.SET_NULL,
@@ -38,7 +38,7 @@ class Product(models.Model):
     tags = models.ManyToManyField(Tag, related_name="products", blank=True)
 
     def __str__(self):
-        return self.name
+        return self.description
 
     def __repr__(self):
-        return f"Product({self.name!r})"
+        return f"Product({self.description!r})"

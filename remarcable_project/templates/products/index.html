@@ -61,8 +61,8 @@
         </p>
       </div>
       <div class="column is-2 buttons">
-          <button class="button is-dark is-fullwidth mt-4 mb-3" type="submit">Filter</button>
-          <a class="button is-fullwidth" href="/">Clear filters</a>
+        <button class="button is-dark is-fullwidth mt-4 mb-3" type="submit">Filter</button>
+        <a class="button is-fullwidth" href="/">Clear filters</a>
       </div>
     </div>
   </form>
@@ -80,11 +80,11 @@
             <figure class="image is-4by3">
               <img
                   src="https://images.thdstatic.com/productImages/5619d857-14f0-4adb-a749-847468164632/svn/milwaukee-electricians-tool-sets-48-22-8111-48-22-2202-48-22-3079-64_600.jpg"
-                  alt="{{ product.name }}">
+                  alt="{{ product.description }}">
             </figure>
           </div>
           <div class="card-content">
-            <p class="title is-6">{{ product.name }}</p>
+            <p class="title is-6">{{ product.description }}</p>
             <p class="subtitle is-7">{{ product.category.name }}</p>
             <div class="tags">
               {% for tag in product.tags.all %}

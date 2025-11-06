@@ -35,7 +35,9 @@ You can log in to the admin site using your superuser credentials created above.
 - Using the built-in `User` model is sufficient, along with username sign in instead of email
 - Creating multiple apps is overkill for the scope
 - I'm not being evaluated too much on the folder structure
-
+- If you were to delete a category, you shouldn't delete any products within it (therefore products don't require categories)
+- I didn't need any other fields on products besides description (like UUID, brand, etc...)
+- I liked the look of products in a grid with images, but didn't bother implementing an actual field for it, but used a generic image instead
 
 ## AI Attribution
 

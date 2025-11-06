@@ -12,7 +12,7 @@ def index(request):
     qs = Product.objects.all()
 
     if search:
-        qs = qs.filter(name__icontains=search)
+        qs = qs.filter(description__icontains=search)
 
     if category:
         qs = qs.filter(category__pk=category)

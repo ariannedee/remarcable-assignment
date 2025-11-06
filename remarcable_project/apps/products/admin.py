@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django.utils.safestring import mark_safe
 
 from .models import Category, Product, Tag
 
@@ -16,9 +15,9 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'name', 'category', 'get_tags')
+    list_display = ('pk', 'description', 'category', 'get_tags')
     list_filter = ('category', 'tags')
-    search_fields = ('name', 'category__name', 'tags__name')
+    search_fields = ('description', 'category__name', 'tags__name')
 
     def get_tags(self, obj):
         return " | ".join([t.name for t in obj.tags.all()])
